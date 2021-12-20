@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Single Price Grid Component</title>
+    <style>
+        /*Primary
+        Cyan: hsl(179, 62%, 43%) 2AB2AFFF
+        Bright Yellow: hsl(71, 73%, 54%) C0DF34FF
+        Neutral
+        Light Gray: hsl(204, 43%, 93%) E5EFF5FF
+        Grayish Blue: hsl(218, 22%, 67%) 98A6BDFF
+        */
+        body {
+            height: 100%;
+            font-size: 16px;
+            font-family: 'Karla', sans-serif;
+        }
+    </style>
 </head>
 <body>
-  Join our community
+<div class="h-full min-h-screen flex flex-col justify-between bg-[#E5EFF5FF]">
+    <div class="mx-8 my-12 lg:m-auto lg:max-w-[700px]">
+        <div class="bg-white rounded-t-lg p-6 lg:p-8">
+            <h2 class="text-xl font-bold text-[#2AB2AFFF] mb-4">Join our community</h2>
+            <div class="font-bold text-[#C0DF34FF] mb-4">30-day, hassle-free money back guarantee</div>
+            <div class="text-[#98A6BDFF] text-sm">Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.</div>
+        </div>
+        <div class="lg:flex w-full text-white">
+            <div class="bg-[#2AB2AFFF] p-6 lg:p-8 lg:w-full lg:rounded-bl-lg">
+                <h2 class="font-bold mb-4">Monthly Subscription</h2>
+                <div class="flex items-center mb-2"><span class="text-4xl mr-2">&dollar;29</span><span class="text-[#E5EFF5FF] text-sm">per month</span></div>
+                <div class="text-sm text-[#E5EFF5FF] mb-5">Full access for less than &dollar;1 a day</div>
+                <button class="w-full rounded-lg bg-[#C0DF34FF] hover:bg-[#9AB42BFF] py-2 drop-shadow-lg">Sign Up</button>
+            </div>
+            <div class="rounded-b-lg lg:rounded-l-none bg-[#32CECBFF] p-6 lg:p-8 lg:w-full">
+                <h2 class="font-bold mb-3">Why Us</h2>
+                <ul class="text-sm text-[#E5EFF5FF]">
+                    <li>Tutorials by industry experts</li>
+                    <li>Peer &amp; expert code review</li>
+                    <li>Coding exercises</li>
+                    <li>Access to our GitHub repos</li>
+                    <li>Community forum</li>
+                    <li>Flashcard decks</li>
+                    <li>New videos every week</li>
+                </ul>
+            </div>
+        </div>
 
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    </div>
+</div>
 </body>
 </html>
